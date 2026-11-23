@@ -21,7 +21,6 @@ $colorWarning = @{
     ForegroundColor = 'Red' 
 }	
 
-
 #Validate script is running as admin 	
 
 function Validate_Admin {
@@ -33,7 +32,6 @@ function Validate_Admin {
 		Write-Host "Running as Administrator." @colorSuccess
 	}
 }
-
 
 #Valistate Root dir exists. If not then create. 
 
@@ -53,9 +51,8 @@ function Validate_Admin {
         }
     } 
 
-    Write-Host "$rootDir has been validated" @colorSuccess
+    Write-Host "$rootDir has been validated" @colorSuccess 
 }
- 
  
 function Main {
 
@@ -79,8 +76,7 @@ function Main {
         }
 
         Write-Host "$dir has been validated" @colorSuccess				
-	}
-	
+	}	
 }
 
 Main
